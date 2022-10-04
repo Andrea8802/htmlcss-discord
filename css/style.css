@@ -79,10 +79,10 @@ header{
     }
 
     .text-header{
-    height: 40%;
-    width: 65%;
-    text-align: center;
-    margin-bottom: 5px;
+        height: 40%;
+        width: 65%;
+        text-align: center;
+        margin-bottom: 5px;
     }      
 
             .text-header > h2{
@@ -126,6 +126,7 @@ header{
                 color: white;
                 font-size: 15px;
                 margin-left: 20px;
+                cursor: pointer;
             }
 
 
@@ -152,22 +153,31 @@ header{
     margin: auto;
     display: flex;
     justify-content: center;
-    /* DEBUG */
-    background-color: blueviolet;
+    align-items: flex-start;
 }
 
     .sez-1-main > .image{
         flex-basis: 60%;
-        /* DEBUG */
-        background-color: green;
     }
 
     .sez-1-main > .text{
         flex-basis: 40%;
-        /* DEBUG */
-        background-color: yellow;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 40px;
     }
+        
+        .sez-1-main > .text > h2{
+            font-size: 40px;
+            margin-bottom: 25px;
+            font-family: 'Whitney semibold', sans-serif;
+        }
 
+        .sez-1-main > .text > p{
+            line-height: 140%;
+            font-size: 17px;
+        }
 
 .sez-2-main{
     width: 80%;
@@ -175,20 +185,31 @@ header{
     margin: auto;
     display: flex;
     justify-content: center;
-    /* DEBUG */
-    background-color: blueviolet;
+    align-items: flex-start;
 }
     
     .sez-2-main > .text{
         flex-basis: 40%;
-        /* DEBUG */
-        background-color: yellow;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 40px;
     }
+
+        .sez-2-main > .text > h2{
+            font-size: 40px;
+            margin-bottom: 25px;
+            font-family: 'Whitney semibold', sans-serif;
+        }
+
+        .sez-2-main > .text > p{
+            line-height: 140%;
+            font-size: 17px;
+        }
+
 
     .sez-2-main > .image{
         flex-basis: 60%;
-        /* DEBUG */
-        background-color: green;
     }
 
 
@@ -256,7 +277,7 @@ header{
         background-color: yellow;
     }
 
-    .sez-5-main > .btn-download{
+    .sez-5-main > .download{
         flex-basis: 50%;
         /* DEBUG */
         background-color: green;
