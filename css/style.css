@@ -14,6 +14,10 @@ body{
     margin: auto;
 }
 
+h2{
+    font-family: 'Whitney Semibold', sans-serif;
+}
+
 /* Header Rules */
 header{
     height: 450px;
@@ -88,7 +92,6 @@ header{
             .text-header > h2{
                 color: white;
                 font-size: 45px;
-                font-family: 'Whitney Semibold', sans-serif;
                 margin-bottom: 20px;
             }
 
@@ -190,7 +193,6 @@ header{
         .sez-1-main > .text > h2{
             font-size: 40px;
             margin-bottom: 25px;
-            font-family: 'Whitney semibold', sans-serif;
         }
 
         .sez-1-main > .text > p{
@@ -218,7 +220,6 @@ header{
         .sez-2-main > .text > h2{
             font-size: 40px;
             margin-bottom: 25px;
-            font-family: 'Whitney semibold', sans-serif;
         }
 
         .sez-2-main > .text > p{
@@ -256,7 +257,6 @@ header{
         .sez-3-main > .text > h2{
             font-size: 40px;
             margin-bottom: 25px;
-            font-family: 'Whitney semibold', sans-serif;
         }
 
         .sez-3-main > .text > p{
@@ -284,7 +284,6 @@ header{
         .sez-4-main > .text > h2{
             font-size: 40px;
             margin-bottom: 25px;
-            font-family: 'Whitney semibold', sans-serif;
         }
 
         .sez-4-main > .text > p{
@@ -321,7 +320,6 @@ header{
 
         .sez-5-main > .text > h2{
             font-size: 27px;
-            font-family: 'Whitney semibold', sans-serif;
         }
 
     .sez-5-main > .download{
@@ -343,7 +341,7 @@ header{
 /* Footer Rules */
 footer{
     height: 500px;
-    background-color: pink;
+    background-color: #23272a;
 }
 
 .sez-1-footer{
@@ -351,24 +349,52 @@ footer{
     display: flex;
     justify-content: space-evenly;
     /* align-items: baseline; */
-    /* DEBUG */
-    background-color: aqua;
 }
 
     .sez-1-footer > div{
-        flex-basis: calc(70% / 4);
-        text-align: center;
+        flex-basis: calc(75% / 4);
         /* DEBUG */
         background-color: blue;
         border: 1px solid black;
     }
 
-    #col-grande{
-        flex-basis: 35%;
-        /* DEBUG */
-        background-color: blueviolet;
+    .sez-1-footer > *{
+        padding: 40px 15px 0px;
     }
 
+    #col-grande{
+        flex-basis: 25%;
+        /* DEBUG */
+        background-color: #23272a;
+        border: 0px;
+        color: white;
+    }
+
+        #col-grande > h2{
+            font-size: 30px;
+            color: #7289d6;
+        }
+
+    .lingua{
+        margin: 12px 0 15px;
+    }
+
+        #col-grande > .lingua > img{
+            width: 20px;
+            vertical-align: middle;
+        }
+
+        #col-grande > .lingua > span{
+            font-size: 13px;
+        }
+
+        #col-grande > .lingua > i{
+            font-size: 11px;
+        }
+
+    .icone > i{
+        margin: 0 7px;
+    }
 
 .sez-2-footer{
     height: 100px;
