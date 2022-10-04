@@ -353,27 +353,27 @@ footer{
 
     .sez-1-footer > div{
         flex-basis: calc(75% / 4);
-        /* DEBUG */
-        background-color: blue;
-        border: 1px solid black;
     }
 
     .sez-1-footer > *{
         padding: 40px 15px 0px;
     }
 
+        .sez-1-footer a{
+            display: block;
+        }
+
     #col-grande{
         flex-basis: 25%;
-        /* DEBUG */
-        background-color: #23272a;
-        border: 0px;
         color: white;
+        
     }
 
         #col-grande > h2{
             font-size: 30px;
             color: #7289d6;
         }
+
 
     .lingua{
         margin: 12px 0 15px;
@@ -388,30 +388,64 @@ footer{
             font-size: 13px;
         }
 
-        #col-grande > .lingua > i{
+        #col-grande > .lingua > a{
+            text-decoration: none;
+            color: white;
+            display: inline;
             font-size: 11px;
         }
 
-    .icone > i{
-        margin: 0 7px;
+        #col-grande > .icone > a{
+            display: inline;
+            margin: 0 7px;
+            text-decoration: none;
+            color: white;
+        }
+
+    
+    .col-piccola{
+        line-height: 180%;
     }
+
+        .col-piccola > .col-title{
+           color: #7289d6;
+           font-family: 'Whitney Semibold', sans-serif;
+           font-size: 14px;
+        }
+
+        .col-piccola > a{
+            text-decoration: none;
+            color: #dadfd7;
+            font-size: 14px;
+        }
+
 
 .sez-2-footer{
     height: 100px;
     display: flex;
     justify-content: space-between;
-    /* DEBUG */
-    background-color: brown;
+    border-top: 1px solid #7289d6;
+    padding-top: 20px;
 }
 
-.sez-2-footer > .icona{
-    width: 10%;
-    /* DEBUG */
-    background-color: darkgreen;
+.sez-2-footer > .logo{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .sez-2-footer > .btn-reg{
     width: 10%;
-    /* DEBUG */
-    background-color: indigo;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
+
+    .sez-2-footer > .btn-reg > a{
+        background-color: #7289d6;
+        padding: 8px 12px;
+        font-size: 14px;
+        border-radius: 30px;
+        text-decoration: none;
+        color: white;
+    }
