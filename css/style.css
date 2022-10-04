@@ -131,22 +131,41 @@ header{
 
 
 /* Main Rules */
+.wave-container.one{
+    background-color: white;
+    position: relative;
+}
+
+.wave-container.two{
+    background-color: white;
+    position: relative;
+    transform: rotate(180deg);
+    margin-bottom: 80px;
+}
+
+
+    /* Wave */
+.wave-1{
+    opacity: 10%;
+    position: absolute;
+    bottom: 0px;
+}
+
 .bg-grey{
-    padding: 150px 0;
-    /* DEBUG */
-    background-color: grey;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 100px 0;
 }
 
 .bg-white{
     padding: 150px 0;
-    /* DEBUG */
-    background-color: white;
 }
 
 .bd-grey > .sez-4-main{
     padding-bottom: 50px;
 }
 
+
+    /* Section */
 .sez-1-main{
     width: 80%;
     min-height: 350px;
@@ -219,44 +238,62 @@ header{
     margin: auto;
     display: flex;
     justify-content: center;
-    /* DEBUG */
-    background-color: blueviolet;
+    align-items: flex-start;
 }
     
     .sez-3-main > .image{
         flex-basis: 60%;
-        /* DEBUG */
-        background-color: green;
     }
 
     .sez-3-main > .text{
         flex-basis: 40%;
-        /* DEBUG */
-        background-color: yellow;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 40px;
     }
+
+        .sez-3-main > .text > h2{
+            font-size: 40px;
+            margin-bottom: 25px;
+            font-family: 'Whitney semibold', sans-serif;
+        }
+
+        .sez-3-main > .text > p{
+            line-height: 140%;
+            font-size: 17px;
+        }
 
 
 .sez-4-main{
     width: 80%;
     height: 600px;
-    margin: 0 auto 120px;
+    margin: 0 auto 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* DEBUG */
-    background-color: blueviolet;
+    align-items: center;
 }
 
     .sez-4-main > .text{
         flex-basis: 30%;
-        /* DEBUG */
-        background-color: yellow;
+        width: 80%;
+        text-align: center;
     }
+
+        .sez-4-main > .text > h2{
+            font-size: 40px;
+            margin-bottom: 25px;
+            font-family: 'Whitney semibold', sans-serif;
+        }
+
+        .sez-4-main > .text > p{
+            line-height: 140%;
+            font-size: 17px;
+        }
 
     .sez-4-main > .image{
         flex-basis: 70%;
-        /* DEBUG */
-        background-color: green;
     }
 
 
@@ -267,21 +304,41 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* DEBUG */
-    background-color: blueviolet;
+    align-items: center;
 }
 
     .sez-5-main > .text{
         flex-basis: 50%;
-        /* DEBUG */
-        background-color: yellow;
+        width: 100%;
+        background-image: url("../img/stars.svg");
+        background-size: 47%;
+        background-position: top;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
+
+        .sez-5-main > .text > h2{
+            font-size: 27px;
+            font-family: 'Whitney semibold', sans-serif;
+        }
 
     .sez-5-main > .download{
         flex-basis: 50%;
-        /* DEBUG */
-        background-color: green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
+
+        .sez-5-main > .download > a{
+            background-color: #7289da;
+            padding: 10px 15px;
+            border-radius: 30px;
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+        }
 
 /* Footer Rules */
 footer{
