@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+body{
+    font-family: 'Whitney', sans-serif;
+}
+
 .container{
     width: 80%;
     margin: auto;
@@ -13,83 +17,117 @@
 /* Header Rules */
 header{
     height: 450px;
-    /* DEBUG */
-    background-color: red;
+    background-image: url("../img/jumbo.png");
+    background-position: center;
+    background-size: cover;
+    padding-top: 10px;
 }
 
 
-.box-header{
-    height: 390px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    /* DEBUG */
-    background-color: rebeccapurple;
-}
-
-    .box-header .text-header{
-        height: 40%;
-        width: 65%;
-        /* DEBUG */
-        background-color:mediumspringgreen;
-    }
-
-    .btn-header{
-        width: 65%;
-        height: 15%;
-        margin-bottom: 80px;
-        display: flex;
-        justify-content: center;
-        /* DEBUG */
-        background-color: yellow;
-    }
-
-        .btn-header > .btn-download{
-        width: 50%;
-        height: 100%;
-        /* DEBUG */
-        background-color: brown;
-        }
-
-        .btn-header > .btn-open{
-            width: 50%;
-            height: 100%;
-            /* DEBUG */
-            background-color: black;
-            }
-
-
-nav{
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-    /* DEBUG */
-    background-color: blue;
-}
-
-    nav > .icona{
-        width: 10%;
-        /* DEBUG */
-        background-color: chartreuse;
-    }
-
-    nav > .btn-reg{
-        width: 10%;
-        /* DEBUG */
-        background-color: violet;
-    }
-
-    nav > ul{
+    nav{
+        height: 60px;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
-    nav > ul > li{
-        list-style: none;
-        margin: 0 10px;
+        nav > .icona{
+            width: 10%;
+
+            
+        }
+
+        nav > .btn-log{
+            display: flex;
+            align-items: center;
+            
+        }
+        
+        nav > .btn-log > a{
+            background-color: white;
+            padding: 10px 15px;
+            border-radius: 30px;
+            text-decoration: none;
+            color: black;
+        }
+
+
+        nav > ul{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+            nav > ul > li{
+                list-style: none;
+                margin: 0 12px;
+            }
+
+                nav > ul > li > a{
+                    text-decoration: none;
+                    color: white;
+                    font-size: 16px;
+                }
+
+
+    .box-header{
+        height: 390px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
     }
+
+    .text-header{
+    height: 40%;
+    width: 65%;
+    text-align: center;
+    margin-bottom: 5px;
+    }      
+
+            .text-header > h2{
+                color: white;
+                font-size: 45px;
+                font-family: 'Whitney Semibold', sans-serif;
+                margin-bottom: 20px;
+            }
+
+            .text-header > p{
+                color: white;
+                line-height: 160%;
+                font-size: 18px;
+            }
+
+
+        .btn-header{
+            width: 65%;
+            height: 15%;
+            margin-bottom: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+            .btn-download{
+            background-color: white;
+            padding: 10px 15px;
+            border: 0px;
+            border-radius: 30px;
+            text-decoration: none;
+            color: black;
+            }
+
+
+            .btn-open{
+                background-color: #23272a;
+                padding: 12px 17px;
+                border: 0px;
+                border-radius: 30px;
+                color: white;
+                font-size: 15px;
+                margin-left: 20px;
+            }
+
 
 /* Main Rules */
 .bg-grey{
