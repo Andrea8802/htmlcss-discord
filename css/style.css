@@ -55,6 +55,11 @@ header{
             color: black;
         }
 
+        nav > .btn-log > a:hover{
+            color: #5865f2;
+            box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.3);
+        }
+
 
         nav > ul{
             display: flex;
@@ -71,6 +76,10 @@ header{
                     text-decoration: none;
                     color: white;
                     font-size: 16px;
+                }
+
+                nav > ul > li > a:hover{
+                    text-decoration: underline;
                 }
 
 
@@ -120,6 +129,11 @@ header{
             color: black;
             }
 
+            .btn-download:hover{
+                color: #5865f2;
+                box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.3);
+            }
+
 
             .btn-open{
                 background-color: #23272a;
@@ -130,6 +144,11 @@ header{
                 font-size: 15px;
                 margin-left: 20px;
                 cursor: pointer;
+            }
+
+            .btn-open:hover{
+                background-color: #36393f;
+                box-shadow: 0px 7px 10px rgba(80, 80, 80, 0.3);
             }
 
 
@@ -330,13 +349,19 @@ header{
     }
 
         .sez-5-main > .download > a{
-            background-color: #7289da;
+            background-color: #5865f2;
             padding: 10px 15px;
             border-radius: 30px;
             text-decoration: none;
             color: white;
             font-size: 16px;
         }
+
+        .sez-5-main > .download > a:hover{
+            background-color: #7983f5;
+            box-shadow: 0px 7px 10px rgba(80, 80, 80, 0.2);
+        }
+        
 
 /* Footer Rules */
 footer{
@@ -348,7 +373,6 @@ footer{
     height: 400px;
     display: flex;
     justify-content: space-evenly;
-    /* align-items: baseline; */
 }
 
     .sez-1-footer > div{
@@ -384,15 +408,11 @@ footer{
             vertical-align: middle;
         }
 
-        #col-grande > .lingua > span{
-            font-size: 13px;
-        }
-
         #col-grande > .lingua > a{
             text-decoration: none;
             color: white;
             display: inline;
-            font-size: 11px;
+            font-size: 12px;
         }
 
         #col-grande > .icone > a{
@@ -419,6 +439,10 @@ footer{
             font-size: 14px;
         }
 
+        .col-piccola > a:hover{
+            text-decoration: underline;
+        }
+
 
 .sez-2-footer{
     height: 100px;
@@ -442,10 +466,15 @@ footer{
 }
 
     .sez-2-footer > .btn-reg > a{
-        background-color: #7289d6;
+        background-color: #5865f2;
         padding: 8px 12px;
         font-size: 14px;
         border-radius: 30px;
         text-decoration: none;
         color: white;
+    }
+
+    .sez-2-footer > .btn-reg > a:hover{
+        background-color: #7983f5;
+        box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.3);
     }
